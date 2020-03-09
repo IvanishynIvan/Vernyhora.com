@@ -1,0 +1,82 @@
+﻿/* Фон и рамка формы */
+body .os-order-form-wrap {background: #fff; border: 5px solid #eee;}
+
+/* Заголовок формы */
+.os-order-form-wrap .os-order-header-title {
+  color: #4cb5ff; /*цвет шрифта. 
+  Добавьте !important сработало, например: 
+  color: blue !important;*/
+  font-size: 27px; /*размер шрифта*/
+  font-weight: bold; /*жирность шрифта*/
+  font-family: arial; /*семейство шрифта*/
+}
+
+/* Шрифты и цвета некоторых полей (взрослые и дети, и, возраст детей, возможны другие даты) */
+body .os-order-first-title,
+body .os-order-and-title,
+body .os-order-second-title,
+body .os-order-input-dates label {font-family: arial;  color: #666;} /*возможны другие даты*/
+
+/* Выпадающие списки (страна, курорт, взрослые, дети, возрасты, длительности) */
+body .os-order-right-col {width:210px;padding-left:39px}
+body .os-order-form-wrap select {font-family: arial;  color: #000;}
+body .os-order-select-wrapper,
+body .os-order-select-wrapper:after {background: #fff;}
+body .os-order-select-wrapper {border-radius: 5px; border: 1px solid #c3c3c3;}
+body .os-order-input-duration .os-order-select-wrapper {border-radius: 5px;} /*длительность*/
+
+/* Цвета иконок в полях. Добавьте !important чтобы сработало, например:
+   body .os-order-input-country .os-order-select-wrapper:after {color: green !important;}*/
+.os-order-form-wrap .os-order-select-wrapper:after {color: #4C9CE0;} /*выпадающий список ближайшего офиса*/
+
+/* Шрифты, их цвета, фон и цвет рамки в полях формы (имя, телефон, е-мейл, пожелания)*/
+body .os-order-user-contacts input,
+body .os-order-form-wrap textarea {font-family: arial; color: #000; background: #F0F0F0; border-color: #c3c3c3;}
+
+/* Скругление углов в полях формы (имя, телефон, е-мейл, пожелания) (4 значения означают углы: верхний-левый верхний-правый нижний-правый нижний-левый)*/
+body .os-order-user-contacts input,
+body .os-order-form-wrap textarea {border-radius: 0px 0px 0px 0px;}
+
+/* Скругление углов в выпадающем списке "ближайший офис"*/
+body .os-order-input-office .os-order-select-wrapper {border-radius: 0px 0px 0px 0px;}
+
+/* Поле даты */
+body .os-order-input-dates .os-order-input-wrapper {
+  font-family: arial; /*семейство шрифта*/
+  color: #000; /*цвет шрифта*/
+  background: #fff; /*цвет фона*/
+  border-radius: 5px; /*скругление углов*/
+  border-color: #c3c3c3; /*цвет рамки*/
+}
+body .os-order-input-dates .os-order-input-wrapper:after {color: #4C9CE0;} /*цвет иконки календаря. Добавьте !important чтобы сработало*/
+
+/* Кнопка "Отправить" */
+body .os-order-form-submit_button {
+  font: bold 18px Arial; /* шрифт */
+  color: #ffffff; /*цвет шрифта*/
+  border: 2px solid #dbdbdb; /*рамка*/
+  border-radius: 25px; /*скругление углов*/
+  background: #4C9CE0; /*цвет фона (добавьте !important чтобы сработало) */
+  height: 50px; /*высота кнопки*/
+  width: 200px; /*ширина кнопки*/
+}
+/* Кнопка "Отправить" при наведении мыши (добавьте !important чтобы сработало) */
+body .os-order-form-submit_button:hover {
+  background: #4C9CE0; /*цвет фона (добавьте !important чтобы сработало) */
+  border-color: #B7B7B7;
+}
+
+body .os-order-header-title, .os-order-form-wrap *:after {
+    color: #4C9CE0 !important;
+}
+body .table-condensed .prev, .table-condensed .next, .table-condensed .switch {
+    background-color: #4C9CE0 !important;
+}
+body .datepicker {
+    border-color: #ff3737 !important;
+    z-index:9999;
+}
+body .os-order-form-submit_button {
+    background-color: #4C9CE0 !important;
+    background-image: linear-gradient(to bottom, #4C9CE0, #4C9CE0) !important;
+}
